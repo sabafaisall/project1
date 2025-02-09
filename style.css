@@ -196,3 +196,103 @@ footer {
     padding: 20px;
     margin-top: 30px;
 }
+/* Small devices (phones, less than 600px) */
+@media screen and (max-width: 600px) {
+    .top-bar {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .container {
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .what {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .top-cards, .bottom-cards {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .course-grid {
+        flex-direction: column;
+    }
+
+    .testimonial-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .blog-posts {
+        flex-direction: column;
+    }
+}
+
+/* Medium devices (tablets, 600px to 1024px) */
+@media screen and (max-width: 1024px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .what {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .course-grid {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .testimonial-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .blog-posts {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/* Large devices (laptops/desktops, above 1024px) */
+@media screen and (min-width: 1025px) {
+    .container, .course-grid, .testimonial-container, .blog-posts {
+        max-width: 1200px;
+        margin: auto;
+    }
+}
+
